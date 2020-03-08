@@ -6,6 +6,7 @@ import {CourseMaterialComponent} from './course-material/course-material.compone
 import {CourseTestComponent} from './course-test/course-test.component';
 import {CourseResultComponent} from './course-result/course-result.component';
 import {AdminDashboardComponent} from './admin-dashboard/admin-dashboard.component';
+import {TraineeProfileComponent} from './trainee-profile/trainee-profile.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'course-test', component: CourseTestComponent},
   {path: 'course-result', component: CourseResultComponent},
   {path: 'dashboard', component: AdminDashboardComponent},
+  {path: 'trainee-profile', component: TraineeProfileComponent},
 ];
 
 @NgModule({

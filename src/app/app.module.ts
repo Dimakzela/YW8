@@ -17,6 +17,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { TraineeProfileComponent } from './trainee-profile/trainee-profile.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     CourseTestComponent,
     CourseResultComponent,
     HeaderComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    TraineeProfileComponent
   ],
   imports: [
     BrowserModule,
