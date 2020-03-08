@@ -22,12 +22,12 @@ export class LoginComponent implements OnInit {
     }
 
     onSubmit()  : void {
-      if (this.loginForm.invalid) {
-        this.errorMessage="Fields are invalid";
-        return;
-      }
-      else{
-        this.router.navigate(['course-overview']);
+      if (this.loginForm.valid) {
+        if(this.loginForm.get('username').value.toString().toLowerCase() === 'admin'){
+          this.router.navigate(['dashboard'])
+        }else {
+          this.router.navigate(['course-overview']);
+        }
       }
   }
 }

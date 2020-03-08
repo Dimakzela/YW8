@@ -8181,7 +8181,7 @@ h1, h2, h3, h4, h5,
 #sidebar {
   min-width: 300px;
   max-width: 300px;
-  background: #1d1919;
+  background-color: #f7eee5;
   color: #fff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -8207,7 +8207,7 @@ h1, h2, h3, h4, h5,
 #sidebar ul li a {
   padding: 10px 0;
   display: block;
-  color: rgba(255, 255, 255, 0.8);
+  color: black;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 #sidebar ul li a:hover {
   color: #f8b739; }
@@ -8238,7 +8238,7 @@ a[data-toggle="collapse"] {
 
 #content {
   width: 100%;
-  padding: 0;
+  margin-top: 50px;
   min-height: 100vh;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -8276,4 +8276,3 @@ a[data-toggle="collapse"] {
   display: table-cell;
   font-size: large;
 }
-

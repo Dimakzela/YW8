@@ -1,7 +1,8 @@
 <div class="wrapper d-flex align-items-stretch">
   <nav id="sidebar">
     <div class="p-4 pt-5">
-      <a href="#" class="img logo rounded-circle mb-5" style="background-image: url('../../assets/images/background.png');"></a>
+      <a href="#" class="img logo rounded-circle mb-5"
+         style="background-image: url('../../assets/images/background.png');"></a>
       <ul class="list-unstyled components mb-5">
         <li class="active"><a href="#">Name</a></li>
         <li><a href="#">Subscription type</a></li>
@@ -11,42 +12,17 @@
     </div>
   </nav>
 
-  <div class="container">
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-       
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
-          </li>
-          <li><a href="#">Is MQTT a Standard?</a>
-          </li>
-          <li><a href="#">IANA stands for:</a>
-          </li>
-          <li><a href="#">Options</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- /navbar -->
-  
-    <div class="row clearfix">
-    </div>
-    <div class="col-md-1 column">
-    </div>
+  <!-- Page Content  -->
+  <div id="content">
+
+    <h2>Quizz</h2>
+
     <div class="col-md-10 column">
       <div class="panel panel-primary">
         <div class="panel-heading">
           <h4 class="panel-title">
             Is MQTT a Standard?
-                      </h4>
+          </h4>
         </div>
         <div class="panel-body">
           <div class="radio">
@@ -59,44 +35,133 @@
               <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> No
             </label>
           </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              IANA stands for:
+            </h4>
           </div>
+          <div class="panel-body">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1" checked=""> Internal
+                Assessment Numerical Access
 
-          <div class="col-md-10 column">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                IANA stands for:
-                          </h4>
+              </label>
             </div>
-            <div class="panel-body">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Internal Assessment Numerical Access
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2"> Internet Association
+                Numbers Authority
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios1" id="optionsRadios3" value="option3"> International Aid for
+                Network Automation
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios1" id="optionsRadios4" value="option4"> Internet Assigned Numbers
+                Authority
+              </label>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  Bluetooth 5.0 promises:
+                </h4>
+              </div>
+              <div class="panel-body">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1" checked=""> 4x Speed,
+                    2x Range, 2x Data
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2"> 6x Speed, 3x Range,
+                    3x Data
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios2" id="optionsRadios3" value="option3"> 2x Speed, 4x Range,
+                    8x Data
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios2" id="optionsRadios4" value="option4"> 3x Speed, 4x Range,
+                    8x Data
+                  </label>
+                </div>
 
-                </label>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      Standard port number for secure MQTT is:
+                    </h4>
+                  </div>
+                  <div class="panel-body">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios3" id="optionsRadios1" value="option1" checked=""> 1883
+
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios3" id="optionsRadios2" value="option2"> 8000
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios3" id="optionsRadios3" value="option3"> 8883
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="optionsRadios3" id="optionsRadios4" value="option4"> 8888
+                      </label>
+                    </div>
+
+
+                    <div class="panel panel-primary">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          Is CoAP a IETF standard?:
+                        </h4>
+                      </div>
+                      <div class="panel-body">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios4" id="optionsRadios1" value="option1" checked="">
+                            True
+
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="optionsRadios4" id="optionsRadios2" value="option2"> False
+                          </label>
+                        </div>
+
+                      </div>
+                      <div class="panel-footer">
+                        <a href="#" routerLink="../course-result" class="btn btn-primary " role="button">Submit</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Internet Association Numbers Authority
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"> International Aid for Network Automation
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"> Internet Assigned Numbers Authority
-                </label>
-              </div>
-              </div>
+            </div>
+          </div>
         </div>
-        <div class="panel-footer">
-          <a href="#" routerLink="../course-result" class="btn btn-primary " role="button" >Finish</a>
-        </div>
-      </div>
-      <div class="col-md-1 column">
       </div>
     </div>
   </div>

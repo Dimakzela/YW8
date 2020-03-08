@@ -18,6 +18,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { TraineeProfileComponent } from './trainee-profile/trainee-profile.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { TraineeProfileComponent } from './trainee-profile/trainee-profile.compo
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
