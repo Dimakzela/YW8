@@ -17,6 +17,7 @@ const routes: Routes = [
   {path: 'course-result', component: CourseResultComponent},
   {path: 'dashboard', component: AdminDashboardComponent},
   {path: 'trainee-profile', component: TraineeProfileComponent},
+  {path: '', component: LoginComponent},
 ];
 
 @NgModule({

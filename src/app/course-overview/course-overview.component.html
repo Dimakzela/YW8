@@ -14,29 +14,30 @@
   <!-- Page Content  -->
   <div id="content" align="center">
 
+    <div class="container">
+      <h1>Course Overview</h1>
     <div class="mt-5">
       <mat-accordion>
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              <h3>Internet Of Things(IOT)</h3>
+              <h3><small class="text-muted">Internet Of Things(IOT)</small></h3>
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo,
-            maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id
-            agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <a class="list-group-item" routerLink="../course-material"><p class="lead">The Internet of Things brings connectivity to virtually everything. It is changing the way we interact and do business. This creates a host of business opportunities and legal challenges.</p></a>
         </mat-expansion-panel>
         <mat-expansion-panel (opened)="panelOpenState = true"
                              (closed)="panelOpenState = false">
           <mat-expansion-panel-header>
             <mat-panel-title>
-              <h3>Coding for Law students</h3>
+              <h3> <small class="text-muted">Coding for Law students</small></h3>
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <p>Coding For Law Students Overview</p>
+          <a class="list-group-item" routerLink="../course-material"><p class="lead">Coding For Law Students Overview</p></a>
         </mat-expansion-panel>
       </mat-accordion>
     </div>
-
+    
+    
   </div>
 </div>

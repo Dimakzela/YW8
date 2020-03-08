@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import { FormGroup,FormBuilder, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,17 +9,25 @@ import {FormControl, FormGroup} from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  loginForm : FormGroup;
+  errorMessage : string;
+
+  constructor(private router : Router,private fb : FormBuilder) { }
 
   ngOnInit() {
+    this.loginForm=this.fb.group({
+      username : ['',Validators.required],
+      password : ['',Validators.required]
+     });
+    }
+
+    onSubmit()  : void {
+      if (this.loginForm.invalid) {
+        this.errorMessage="Fields are invalid";
+        return;
+      }
+      else{
+        this.router.navigate(['course-overview']);
+      }
   }
-
-  form: FormGroup = new FormGroup({
-    username: new FormControl(''),
-    password: new FormControl(''),
-  });
-
-  submit() {
-  }
-
 }
